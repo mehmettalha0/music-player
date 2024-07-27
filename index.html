@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/5eb2c51ffb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Müzik Oynatıcı</title>
+  </head>
+  <body>
+    <h1>Müzik Oynatıcı</h1>
+    <div class="muzik-icerik" id="muzik-icerik">
+      <div class="muzik-bilgi">
+        <h4 class="isim" id="isim"></h4>
+        <div class="ilerleme-cubugu-icerik" id="ilerleme-cubugu-icerik">
+          <div class="ilerleme-cubugu" id="ilerleme-cubugu"></div>
+        </div>
+      </div>
+      <div class="muziksiralama" id="muziksiralama">
+        <div class="p1" id="p1"></div>
+        <div class="p2" id="p2"></div>
+      </div>
+      <audio src="./Muzikler/no1-dunya-gul-bana.mp3" id="ses"></audio>
+      <div class="resim-icerik">
+        <img src="./Resimler/no1-dunya-gul-bana.jpg" alt="Image" id="resim" />
+      </div>
+      <div class="navigasyon">
+        <button id="onceki" class="aksiyon-btn">
+          <i class="fa fa-backward" aria-hidden="true"></i>
+        </button>
+        <button id="oynat" class="aksiyon-btn aksiyon-btn-buyuk">
+          <i class="fa fa-play" aria-hidden="true"></i>
+        </button>
+        <button id="sonraki" class="aksiyon-btn">
+          <i class="fa fa-forward" aria-hidden="true"></i>
+        </button>
+        <button id="menu" class="aksiyon-btn aksiyon-btn-menu">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
